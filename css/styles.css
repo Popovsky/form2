@@ -40,6 +40,7 @@
 .userFormSection {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 1em 0;
 }
 
@@ -48,14 +49,15 @@
 }
 
 .text {
-    width: 20%;
+    min-width: 140px;
     padding-top: 0.8em;
 }
 
 .input {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 .input > *, .submitButton {
@@ -63,14 +65,15 @@
 }
 
 .input > * {
-    width: 100%;
+    min-width: 120px;
     background: white;
     border: none;
+    flex-grow: 1;
 }
 
-.input > input + input {
-    margin-left: 1.5em;
-}
+/*.input > input + input {*/
+/*    margin-left: 1.5em;*/
+/*}*/
 
 .contentForm:first-letter {
     text-transform: uppercase;
