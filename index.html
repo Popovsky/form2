@@ -14,59 +14,61 @@
         <h1 class="formName">contact form</h1>
         <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis.</p>
 
-        <div class="contentWrapper">
-            <div class="labelContent">
-                <div class="labelWrapper">
-                    <label for="">your name</label>
-                </div>
-                <div class="labelWrapper">
-                    <label for="">your email</label>
-                </div>
-                <div class="labelWrapper">
-                    <label for="">phone *</label>
-                </div>
-                <div class="labelWrapper">
-                    <label for="">message subject *</label>
-                </div>
-                <div class="labelWrapper">
-                    <label for="">message *</label>
-                </div>
+        <section class="userName userFormSection">
+            <div class="text">
+                <label for="name">
+                    your name
+                </label>
             </div>
-            <div class="inputContent">
-                <div class="userName">
-                    <input type="text" placeholder="first name">
-                    <input type="text" placeholder="last name">
-                </div>
-
-                <div class="email">
-                    <input type="email" placeholder="your_mail@mail.com" id="email">
-                </div>
-
-                <div class="phone">
-                    <input type="tel" placeholder="000">
-                    <input type="tel" placeholder="000">
-                    <input type="tel" placeholder="0000">
-                </div>
-
-                <div class="subject">
-                    <select name="">
-                        <option value="option1">option1</option>
-                        <option value="option2">option2</option>
-                        <option value="option3">option3</option>
-                        <option value="option4">option4</option>
-                        <option value="option5">option5</option>
-                        <option value="other">other</option>
-                    </select>
-                </div>
-
-                <div class="message">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
+            <div class="input">
+                <input type="text" placeholder="first name" id="name">
+                <input type="text" placeholder="last name">
             </div>
-        </div>
+        </section>
+        <section class="userEmail userFormSection">
+            <div class="text">
+                <label for="email">your email</label>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="your_mail@mail.com" id="email">
+            </div>
+        </section>
+        <section class="userPhone userFormSection">
+            <div class="text">
+                <label for="phone">phone *</label>
+            </div>
+            <div class="input">
+                <input type="tel" placeholder="000" id="phone">
+                <input type="tel" placeholder="000">
+                <input type="tel" placeholder="0000">
+            </div>
+        </section>
+        <section class="userSubject userFormSection">
+            <div class="text">
+                <label for="subject">message subject *</label>
+            </div>
+            <div class="input">
+                <select name="" id="subject">
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                    <option value="option4">Option4</option>
+                    <option value="option5">Option5</option>
+                    <option value="other" selected>Other</option>
+                </select>
+            </div>
+        </section>
+        <section class="userMessage userFormSection">
+            <div class="text">
+                <label for="message">message *</label>
+            </div>
+            <div class="input">
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </section>
 
         <hr class="line">
-        <button class="submitButton" type="submit">submit form</button>
+        <button class="submitButton input" type="submit">submit form</button>
     </form>
 </section>
 </body>
