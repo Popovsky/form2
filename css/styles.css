@@ -1,0 +1,64 @@
+/*@import "reset.css";*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contactFormWrapper {
+    background-image: url("./../images/background.jpg");
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+    padding: 5vh 5vw;
+}
+
+.contentForm {
+    background: transparent;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+    padding: 5vh 2vw;
+}
+
+.contentForm:first-letter {
+    text-transform: uppercase;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelContent > .labelWrapper {
+    margin-top: 1em;
+}
+
+.inputContent > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputContent > div > *, .submitButton, .line {
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+.inputContent > div > input + input {
+    margin-left: 1.5em;
+}
+
+.contentForm div:first-letter {
+    text-transform: uppercase;
+}
+
+.contentForm input, .contentForm select, .contentForm button {
+    padding: 1em;
+}
+
+.contentForm input::placeholder {
+    color: #e1e1e1;
+}
