@@ -5,25 +5,29 @@
 }
 
 .contactFormWrapper {
+    --first-color: white;
     background-image: url("./../images/background.jpg");
     background-size: cover;
-    object-fit: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     min-height: 100vh;
     padding: 5vh 5vw;
     display: flex;
     align-items: center;
 }
 
-.contentForm {
-    background: transparent;
+.contactForm {
     box-shadow: 0 0 20px 0 rgba(0,0,0,1);
     width: 100%;
     font-family: sans-serif;
-    color: white;
+    color: var(--first-color);
     padding: 8vh 2vw;
     max-width: 1200px;
     margin: auto;
+}
+
+.contactForm, .submitButton {
+    background: transparent;
 }
 
 .formName {
@@ -37,11 +41,10 @@
     text-overflow: ellipsis;
 }
 
-.userFormSection {
+.userFormSection, .input {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1em 0;
 }
 
 .text > *, .submitButton {
@@ -50,14 +53,11 @@
 
 .text {
     min-width: 140px;
-    padding-top: 0.8em;
+    margin: 0.8em 0;
 }
 
-.input {
-    display: flex;
-    justify-content: space-between;
+.input, .input > * {
     flex-grow: 1;
-    flex-wrap: wrap;
 }
 
 .input > *, .submitButton {
@@ -66,33 +66,32 @@
 
 .input > * {
     min-width: 120px;
-    background: white;
+    background: var(--first-color);
     border: none;
-    flex-grow: 1;
+    margin: 0.5em 0;
 }
 
-/*.input > input + input {*/
-/*    margin-left: 1.5em;*/
-/*}*/
-
-.contentForm:first-letter {
-    text-transform: uppercase;
+.input > input + input {
+    margin-left: 1.5em;
 }
-/*===================================*/
-.contentForm div:first-letter {
+
+.contactForm:first-letter, .contactForm div:first-letter, .submitButton {
     text-transform: uppercase;
 }
 
-.contentForm input::placeholder {
+.contactForm input::placeholder {
     color: #e1e1e1;
 }
-/*====================================*/
+
+.line {
+    margin-top: 0.5em;
+}
+
 .submitButton {
     margin: 1em 0 1em auto;
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    text-transform: uppercase;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
     display: table;
     font-weight: bold;
+    width: 100%;
 }
